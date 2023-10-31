@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+<div class="calculator column jcc aic">
+    <div class="container column jcc aic">
+        <div id="equality">Калькулятор вероятностей</div>
+
+        <div class="row jcsb aic">
+            <button class="btn-size" title="Перестановки" id="permutation-button">P</button>
+            <button class="btn-size" title="Размещения" id="placement-button">A</button>
+            <button class="btn-size" title="Сочетания" id="combinations-button">C</button>
+        </div>
+        <div id="input-values">
+            <label for="n-input"><h6>Значение n:</h6></label>
+            <input id="n-input" type="number" class="display js-display" placeholder="0">
+            <label for="m-input"><h6>Значение m:</h6></label>
+            <input id="m-input" type="number" class="display js-display" placeholder="0">
+            <div class="permutations">
+                <label class="permutation">с повторениями</label>
+                <input type="checkbox" id="repeat-checkbox" class="check__input">
+
+            </div>
+        </div>
+
+        <div class="row jcsb aic">
+            <button class="btn js-btn-calculate" id="calculate">=</button>
+        </div>
+
+        <div id="answer"></div>
+        <br>
+        <div id="history">
+            <button id="show-history">Показать историю</button>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
